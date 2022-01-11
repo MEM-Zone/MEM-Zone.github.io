@@ -58,4 +58,4 @@ Disallow: /
 User-agent: *
 Allow: *
 
-Sitemap: https://github.com/sitemap.xml
+Sitemap: https://mem-zone.github.io/sitemap.xml
