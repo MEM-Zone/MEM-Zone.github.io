@@ -6,8 +6,8 @@ theme = "DoIt"
 # themes directory
 #themesDir = "/"
 
-# Hugo Publish Directory
-publishDir = "docs"
+# Hugo Publish Directo  ry
+# publishDir = "docs"
 
 # website title
 title = "MEM Zone"
