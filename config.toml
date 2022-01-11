@@ -1,13 +1,10 @@
 baseURL = "https://github.com/MEM-Zone/MEM.Zone-Blog"
+
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
+
 # theme
 theme = "DoIt"
-# themes directory
-#themesDir = "/"
-
-# Hugo Publish Directo  ry
-# publishDir = "docs"
 
 # website title
 title = "MEM Zone"
