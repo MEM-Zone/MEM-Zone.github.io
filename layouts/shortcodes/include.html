@@ -1,0 +1,5 @@
+{{ $user := .Get "user" }}
+{{ $repo := .Get "repo" }}
+{{ $path := .Get "path" }}
+{{ $json := getJSON "https://api.github.com/repos/" $user "/" $repo "/contents/" $path  }}
+{{ $json.content | base64Decode | markdownify }}
