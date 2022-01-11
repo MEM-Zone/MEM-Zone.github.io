@@ -6,6 +6,7 @@ theme = "DoIt"
 # themes directory
 #themesDir = "/"
 
+# Hugo Publish Directory
 publishDir = "docs"
 
 # website title
