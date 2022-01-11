@@ -1,4 +1,4 @@
-baseURL = "https://github.com"
+baseURL = "https://mem-zone.github.io/MEM.Zone-Blog/"
 
 # [en, zh-cn, fr, pl, ...] determines default content language
 defaultContentLanguage = "en"
