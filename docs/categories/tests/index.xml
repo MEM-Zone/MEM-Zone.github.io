@@ -1,0 +1,70 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>Tests - Category - MEM Zone</title>
+        <link>https://ioan-popovici.github.io/MEM.Zone-Blog/categories/tests/</link>
+        <description>Tests - Category - MEM Zone</description>
+        <generator>Hugo -- gohugo.io</generator><language>en</language><managingEditor>heige.pcloud@outlook.com (PCloud)</managingEditor>
+            <webMaster>heige.pcloud@outlook.com (PCloud)</webMaster><copyright>This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.</copyright><lastBuildDate>Mon, 27 Sep 2021 09:47:46 &#43;0100</lastBuildDate><atom:link href="https://ioan-popovici.github.io/MEM.Zone-Blog/categories/tests/" rel="self" type="application/rss+xml" /><item>
+    <title>TOC Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/toc-tests/</link>
+    <pubDate>Mon, 27 Sep 2021 09:47:46 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/toc-tests/</guid>
+    <description><![CDATA[TOC Tests]]></description>
+</item><item>
+    <title>Series Taxonomy Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/series-taxonomy-tests/</link>
+    <pubDate>Sat, 03 Jul 2021 22:15:26 &#43;0800</pubDate><author>
+        <name>PCloud</name>
+    </author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/series-taxonomy-tests/</guid>
+    <description><![CDATA[Series Taxonomy Tests]]></description>
+</item><item>
+    <title>Single Author Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/author-single-tests/</link>
+    <pubDate>Mon, 07 Jun 2021 20:40:23 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/author-single-tests/</guid>
+    <description><![CDATA[Single Author Tests]]></description>
+</item><item>
+    <title>Author Fallback Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/author-fallback-tests/</link>
+    <pubDate>Mon, 07 Jun 2021 20:35:12 &#43;0100</pubDate><author>
+        <name>PCloud</name>
+    </author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/author-fallback-tests/</guid>
+    <description><![CDATA[Author Fallback Tests]]></description>
+</item><item>
+    <title>Showcase Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/showcase-tests/</link>
+    <pubDate>Wed, 26 May 2021 15:30:49 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/showcase-tests/</guid>
+    <description><![CDATA[Showcase shortcode tests]]></description>
+</item><item>
+    <title>Friend Shortcode Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/friend-link-tests/</link>
+    <pubDate>Thu, 29 Apr 2021 13:41:31 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/friend-link-tests/</guid>
+    <description><![CDATA[Friend Shortcode Tests]]></description>
+</item><item>
+    <title>KaTeX Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/katex-tests/</link>
+    <pubDate>Fri, 16 Apr 2021 14:53:03 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/katex-tests/</guid>
+    <description><![CDATA[KaTeX Tests]]></description>
+</item><item>
+    <title>Music Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/music-tests/</link>
+    <pubDate>Fri, 16 Apr 2021 14:47:54 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/music-tests/</guid>
+    <description><![CDATA[Music Tests]]></description>
+</item><item>
+    <title>Mapbox Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/mapbox-tests/</link>
+    <pubDate>Fri, 16 Apr 2021 14:45:40 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/mapbox-tests/</guid>
+    <description><![CDATA[Mapbox Tests]]></description>
+</item><item>
+    <title>Echarts Tests</title>
+    <link>https://ioan-popovici.github.io/MEM.Zone-Blog/echarts-tests/</link>
+    <pubDate>Fri, 16 Apr 2021 14:41:49 &#43;0100</pubDate><author>
+                    <name>PCloud</name><uri>https://github.com/HEIGE-PCloud</uri><email>heige.pcloud@outlook.com</email></author><guid>https://ioan-popovici.github.io/MEM.Zone-Blog/echarts-tests/</guid>
+    <description><![CDATA[Echarts Tests]]></description>
+</item></channel>
+</rss>
