@@ -8,7 +8,7 @@
 <meta property="og:type" content="article">
 <meta property="og:url" content="https://mem-zone.github.io/application-and-package-deployments-reporting-by-collection-with-sccm/"><meta property="og:image" content="https://mem-zone.github.io/application-and-package-deployments-reporting-by-collection-with-sccm/cover-package_delivery_street_sign.webp"><meta property="article:section" content="posts">
 <meta property="article:published_time" content="2018-05-23T16:51:00+00:00">
-<meta property="article:modified_time" content="2022-01-11T17:19:38+02:00"><meta property="og:site_name" content="MEM Zone Techinal Blog">
+<meta property="article:modified_time" content="2022-01-11T19:23:37+02:00"><meta property="og:site_name" content="MEM Zone Techinal Blog">
 <meta name=twitter:card content="summary_large_image">
 <meta name=twitter:image content="https://mem-zone.github.io/application-and-package-deployments-reporting-by-collection-with-sccm/cover-package_delivery_street_sign.webp">
 <meta name=twitter:title content="Application and Package Deployments Reporting by Collection with MEMCM/SCCM">
@@ -20,7 +20,7 @@
 <link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=mask-icon href=/safari-pinned-tab.svg color=#5bbad5><link rel=manifest href=/site.webmanifest><link rel=canonical href=https://mem-zone.github.io/application-and-package-deployments-reporting-by-collection-with-sccm/><link rel=prev href=https://mem-zone.github.io/theme-documentation-content/><link rel=next href=https://mem-zone.github.io/theme-documentation-basics/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/fontawesome-free/all.min.css>
 <noscript><link rel=stylesheet href=/lib/fontawesome-free/all.min.css></noscript><link rel=preload as=style onload="this.onload=null,this.rel='stylesheet'" href=/lib/animate/animate.min.css>
 <noscript><link rel=stylesheet href=/lib/animate/animate.min.css></noscript>
-<meta name=google-site-verification content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Application and Package Deployments Reporting by Collection with MEMCM/SCCM","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/mem-zone.github.io\/application-and-package-deployments-reporting-by-collection-with-sccm\/"},"image":["https:\/\/mem-zone.github.io\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"SQL, SSRS, MEMCM, SCCM, Applications, Packages, Deployments, Security","wordcount":618,"url":"https:\/\/mem-zone.github.io\/application-and-package-deployments-reporting-by-collection-with-sccm\/","datePublished":"2018-05-23T16:51:00+00:00","dateModified":"2022-01-11T17:19:38+02:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"https:\/\/mem-zone.github.io\/images\/avatar.webp","width":528,"height":560}},"author":{"@type":"Person","name":"Ioan Popovici"},"description":"Lists the application or package deployments for a MEMCM/SCCM device or user collection."}</script></head>
+<meta name=google-site-verification content="MQ8DNu27ayX6B_4ObiEDK09vGr1fdy7kOAnbd09hJk4"><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"Application and Package Deployments Reporting by Collection with MEMCM/SCCM","inLanguage":"en","mainEntityOfPage":{"@type":"WebPage","@id":"https:\/\/mem-zone.github.io\/application-and-package-deployments-reporting-by-collection-with-sccm\/"},"image":["https:\/\/mem-zone.github.io\/images\/Apple-Devices-Preview.png"],"genre":"posts","keywords":"SQL, SSRS, MEMCM, SCCM, Applications, Packages, Deployments, Security","wordcount":669,"url":"https:\/\/mem-zone.github.io\/application-and-package-deployments-reporting-by-collection-with-sccm\/","datePublished":"2018-05-23T16:51:00+00:00","dateModified":"2022-01-11T19:23:37+02:00","license":"This work is licensed under a Creative Commons Attribution-NonCommercial 4.0 International License.","publisher":{"@type":"Organization","name":"xxxx","logo":{"@type":"ImageObject","url":"https:\/\/mem-zone.github.io\/images\/avatar.webp","width":528,"height":560}},"author":{"@type":"Person","name":"Ioan Popovici"},"description":"Lists the application or package deployments for a MEMCM/SCCM device or user collection."}</script></head>
 <body header-desktop=fixed header-mobile=auto><script type=text/javascript>function setTheme(a){document.body.setAttribute('theme',a)}function saveTheme(a){window.localStorage&&localStorage.setItem('theme',a)}function getMeta(b){const a=document.getElementsByTagName('meta');for(let c=0;c<a.length;c++)if(a[c].getAttribute('name')===b)return a[c];return''}if(window.localStorage&&localStorage.getItem('theme')){let a=localStorage.getItem('theme');a==='light'||a==='dark'||a==='black'?setTheme(a):window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light')}else'auto'==='light'||'auto'==='dark'||'auto'==='black'?(setTheme('auto'),saveTheme('auto')):(saveTheme('auto'),window.matchMedia&&window.matchMedia('(prefers-color-scheme: dark)').matches?setTheme('dark'):setTheme('light'));let metaColors={light:'#f8f8f8',dark:'#252627',black:'#000000'};getMeta('theme-color').content=metaColors[document.body.getAttribute('theme')]</script>
 <div id=back-to-top></div>
 <div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
@@ -93,6 +93,8 @@ Cancel
 <h2 class=toc-title>Contents</h2>
 <div class="toc-content always-active" id=toc-content-auto><nav id=TableOfContents>
 <ul>
+<li><a href=#summary>Summary</a></li>
+<li><a href=#release-history>Release History</a></li>
 <li><a href=#prerequisites>Prerequisites</a></li>
 <li><a href=#installation>Installation</a>
 <ul>
@@ -118,8 +120,8 @@ Cancel
 <div class=post-meta-line>
 <span class=post-author><i class="author fas fa-user-circle fa-fw"></i><a href=https://github.com/HEIGE-PCloud title=Author target=_blank rel="noopener noreffer author" class=author>Ioan Popovici</a>
 </span>&nbsp;<span class=post-category>included in </span>&nbsp;<span class=post-category>category <a href=/categories/reports/><i class="far fa-folder fa-fw"></i>Reports</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-05-23>2018-05-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2022-01-11>2022-01-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;618 words&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;3 minutes&nbsp;<span id=/application-and-package-deployments-reporting-by-collection-with-sccm/ class=leancloud_visitors data-flag-title="Application and Package Deployments Reporting by Collection with MEMCM/SCCM">
+<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2018-05-23>2018-05-23</time>&nbsp;<i class="far fa-edit fa-fw"></i>&nbsp;<time datetime=2022-01-11>2022-01-11</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;669 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;4 minutes&nbsp;<span id=/application-and-package-deployments-reporting-by-collection-with-sccm/ class=leancloud_visitors data-flag-title="Application and Package Deployments Reporting by Collection with MEMCM/SCCM">
 <i class="far fa-eye fa-fw"></i>&nbsp;<span class=leancloud-visitors-count id=twikoo_visitors></span>&nbsp;views
 </span>&nbsp;<span id=/application-and-package-deployments-reporting-by-collection-with-sccm/ class=comment_count data-flag-title="Application and Package Deployments Reporting by Collection with MEMCM/SCCM">
 <i class="far fa-comments fa-fw"></i>&nbsp;<span class=twikoo-comment-count id=twikoo-comment-count></span>&nbsp;comments
@@ -131,6 +133,8 @@ Cancel
 </div>
 <div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
 <ul>
+<li><a href=#summary>Summary</a></li>
+<li><a href=#release-history>Release History</a></li>
 <li><a href=#prerequisites>Prerequisites</a></li>
 <li><a href=#installation>Installation</a>
 <ul>
@@ -152,9 +156,42 @@ Cancel
 <li><a href=#support>Support</a></li>
 </ul>
 </nav></div>
-</div><div class=content id=content><p><a href=https://SCCM.Zone/DE-Deployments-by-Device-or-User-CHANGELOG target=_blank rel="noopener noreffer">Report release history</a></p>
-<p>No default reports exists that can display results for each collection member. There is a report that lists deployments for a specific collection but that’s it. If a collection member has a deployment on a different collection you are out of luck. Well not anymore…</p>
+</div><div class=content id=content><h2 id=summary class=headerLink>
+<a href=#summary class=header-mark></a>Summary</h2><p>No default reports exists that can display results for each collection member. There is a report that lists deployments for a specific collection but that’s it. If a collection member has a deployment on a different collection you are out of luck. Well not anymore…</p>
 <p>I used the <a href=https://docs.microsoft.com/en-us/sccm/core/servers/manage/list-of-reports#software-distribution---package-and-program-deployment target=_blank rel="noopener noreffer"><code>All package and program deployments</code></a> to a specified user/device as reference. One of the problems was that the <code>User</code> report has a bug and returns <code>NULL</code> for most packages. Since the views are so well documented, it took a while to get it right.</p>
+<h2 id=release-history class=headerLink>
+<a href=#release-history class=header-mark></a>Release History</h2><div class="details admonition info">
+<div class="details-summary admonition-title">
+<i class="icon fas fa-info-circle fa-fw"></i>Changelog<i class="details-icon fas fa-angle-right fa-fw"></i>
+</div>
+<div class=details-content>
+<div class=admonition-content><h1 id=sw-installed-software-by-computer-or-publisher-release-history>SW Installed Software by Computer or Publisher release history</h1>
+<h2 id=12---2018-08-06>1.2 - 2018-08-06</h2>
+<h3 id=changed>Changed</h3>
+<ul>
+<li>Fixed empty or NULL publisher</li>
+<li>Updated report template</li>
+</ul>
+<h2 id=12---2018-08-06-1>1.2 - 2018-08-06</h2>
+<h3 id=added>Added</h3>
+<ul>
+<li>System service tag</li>
+<li>Chassis information</li>
+<li>Type information</li>
+</ul>
+<h2 id=11---2018-08-06>1.1 - 2018-08-06</h2>
+<h3 id=fixed>Fixed</h3>
+<ul>
+<li>Empty software name</li>
+</ul>
+<h2 id=10---2018-07-16>1.0 - 2018-07-16</h2>
+<h3 id=first-version>First version</h3>
+<ul>
+<li>Get installed software by collection and software name</li>
+</ul>
+</div>
+</div>
+</div>
 <h2 id=prerequisites class=headerLink>
 <a href=#prerequisites class=header-mark></a>Prerequisites</h2><ul>
 <li>Report (Follow link → Copy/Download)
@@ -671,8 +708,8 @@ I did not post screenshots with package deployments because of severe laziness b
 <div class=post-info>
 <div class=post-info-line>
 <div class=post-info-mod>
-<span>Updated on 2022-01-11&nbsp;<a class=git-hash href=https://github.com/HEIGE-PCloud/DoIt/commit/3731c80c979287b9742e83704a664f5e396bc784 target=_blank title="commit by Ioan Popovici(me@ioan-popovici.ro) 3731c80c979287b9742e83704a664f5e396bc784: Beta" rel="noopener noreferrer">
-<i class="fas fa-hashtag fa-fw"></i>3731c80</a></span>
+<span>Updated on 2022-01-11&nbsp;<a class=git-hash href=https://github.com/HEIGE-PCloud/DoIt/commit/b5fcdf4ac39515951a05e75eda2c2e00034bff98 target=_blank title="commit by Ioan Popovici(me@ioan-popovici.ro) b5fcdf4ac39515951a05e75eda2c2e00034bff98: Beta" rel="noopener noreferrer">
+<i class="fas fa-hashtag fa-fw"></i>b5fcdf4</a></span>
 </div>
 <div class=post-info-license></div>
 </div>

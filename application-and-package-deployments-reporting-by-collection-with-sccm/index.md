@@ -1,11 +1,16 @@
 # Application and Package Deployments Reporting by Collection with MEMCM/SCCM
 
 
-[Report release history](https://SCCM.Zone/DE-Deployments-by-Device-or-User-CHANGELOG)
-
+## Summary
 No default reports exists that can display results for each collection member. There is a report that lists deployments for a specific collection but that’s it. If a collection member has a deployment on a different collection you are out of luck. Well not anymore…
 
 I used the [`All package and program deployments`](https://docs.microsoft.com/en-us/sccm/core/servers/manage/list-of-reports#software-distribution---package-and-program-deployment) to a specified user/device as reference. One of the problems was that the `User` report has a bug and returns `NULL` for most packages. Since the views are so well documented, it took a while to get it right.
+
+## Release History
+
+{{< admonition type=info title="Changelog" open=false >}}
+{{< include user="Ioan-Popovici" repo="SCCM-Zone" path="Reporting/Software/SW Installed Software by Computer or Publisher/CHANGELOG.md" >}}
+{{< /admonition >}}
 
 ## Prerequisites
 
